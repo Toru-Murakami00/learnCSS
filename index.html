@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./dragula.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src=".\/js\/jquery3.6.0.js"><\/script>');
+    </script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="progressContainer">
+        <div id="progressBar"></div>
+      </div>
+      <br />
+      <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#color">Color</a>
+        <a href="#font">Font</a>
+        <a href="#advanced">Advanced</a>
+      </nav>
+    </header>
+    <main class="width-90">
+      <h1>Learn CSS</h1>
+      <div id="introduction">
+        <br />
+        <h2>Introduction</h2>
+        <p>
+          Some people like, some people hate, but everyone sees css almost
+          everyday.
+        </p>
+        <p>
+          CSS, cascading style sheet, is a tool that developers can use to
+          decorate html pages.
+        </p>
+        <button id="enableColor">Learn more</button>
+        <br />
+        <br />
+      </div>
+      <div id="color">
+        <br />
+        <h2>Color</h2>
+        <p>
+          Color is one of the most important element in visual design. In this
+          section, we will play with multiple colors and learn how they work in
+          websites.
+        </p>
+        <p>Code examples:</p>
+        <p class="code">
+          backgound-color: red;<br />
+          color: blue;<br />
+          border-color: green;
+        </p>
+        <p id="colorPlayground" class="playground">
+          Let's play with some colors. Drag and drop colors to make changes.
+        </p>
+        <div class="selectionBox" id="color1">
+          <div class="item color" draggable="true">red</div>
+        </div>
+        <div class="optionBox" id="color2">
+          <div class="item color" draggable="true">blue</div>
+          <div class="item color" draggable="true">brown</div>
+          <div class="item color" draggable="true">green</div>
+          <div class="item color" draggable="true">aquamarine</div>
+          <div class="item color" draggable="true">purple</div>
+        </div>
+        <button id="enableFont">Learn more</button>
+        <br />
+        <br />
+      </div>
+      <div id="font">
+        <br />
+        <h2>Font</h2>
+        <p>
+          Font is often underappreciated element of visual design. However,
+          impacts that fonts can have on atmosphere and message are
+          immeasurable.
+        </p>
+        <p>Code examples:</p>
+        <p class="code">
+          font-family: monospace;<br />
+          font-weight: bold;
+        </p>
+        <p id="fontPlayground" class="playground">
+          Let's play with some fonts. Drag and drop fonts to make changes.
+        </p>
+        <div class="selectionBox" id="font1">
+          <div class="item font" draggable="true">monospace</div>
+        </div>
+        <div class="optionBox" id="font2">
+          <div class="item font" draggable="true">Times New Roman</div>
+          <div class="item font" draggable="true">Helvetica</div>
+          <div class="item font" draggable="true">Georgia</div>
+          <div class="item font" draggable="true">Arial</div>
+          <div class="item font" draggable="true">Garamond</div>
+        </div>
+        <button id="enableAdvanced">Learn more</button>
+        <br />
+        <br />
+      </div>
+      <div id="advanced">
+        <h2>Advanced</h2>
+        <p id="cssPlayground" class="playground">
+          Let's play with some css. type css values to make changes.
+        </p>
+        <p class="code">
+          color: <input type="text" id="clr" /> <br />
+          background-color: <input type="text" id="bgc" /> <br />
+          border-color: <input type="text" id="bdc" /> <br />
+          border-width: <input type="text" id="bdw" />px <br />
+          font-family: <input type="text" id="ff" /> <br />
+        </p>
+        <br /><br />
+        <button id="cssButton">Make Change</button>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"
+      integrity="sha512-NgXVRE+Mxxf647SqmbB9wPS5SEpWiLFp5G7ItUNFi+GVUyQeP+7w4vnKtc2O/Dm74TpTFKXNjakd40pfSKNulg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
