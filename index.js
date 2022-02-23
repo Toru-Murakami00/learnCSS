@@ -32,7 +32,6 @@ function editCss() {
 }
 
 
-
 // drag and drop for color
 dragula([$("#color1")[0], $("#color2")[0]], {
     // disable dragging from color1 to color2
